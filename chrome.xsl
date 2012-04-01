@@ -86,7 +86,7 @@
                 <xsl:value-of select="//@title" disable-output-escaping="yes" />
               </xsl:if>
               <xsl:if test="//@title = ''">
-                <img src="{$root}images/logo.png" />
+                phpDocumentor
               </xsl:if>
               <img src="{$root}images/top-stopper.png" />
             </h1>

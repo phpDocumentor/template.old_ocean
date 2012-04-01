@@ -7,7 +7,7 @@
     <xsl:if test="count(/project/namespace[@name != 'default']) > 0">
       <div class="section">
         <h1>Namespaces</h1>
-        <!--<input type="checkbox" onclick="$('.treeview-docblox small').toggle(!this.checked);" checked="">Compact view<br />-->
+        <!--<input type="checkbox" onclick="$('.treeview-phpdoc small').toggle(!this.checked);" checked="">Compact view<br />-->
         <ul id="namespaces-" class="filetree">
           <xsl:apply-templates select="/project/namespace">
             <xsl:sort select="@name" />
@@ -52,7 +52,7 @@
       <xsl:value-of select="@path" />
     </h2>
     <xsl:variable name="file" select="@hash" />
-    <ul id="files_{$file}" class="treeview-docblox">
+    <ul id="files_{$file}" class="treeview-phpdoc">
       <xsl:for-each select="class">
         <li>
           <span>
