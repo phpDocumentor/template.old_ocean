@@ -9,32 +9,32 @@
     <transformation query="copy" writer="FileIo" source="ajax_search.php" artifact="ajax_search.php"/>
     <transformation query="copy" writer="FileIo" source="js" artifact="js"/>
     <transformation query="copy" writer="FileIo" source="images" artifact="images"/>
-    <transformation query="copy" writer="FileIo" source="templates/old_ocean/css" artifact="css"/>
-    <transformation query="copy" writer="FileIo" source="templates/old_ocean/images" artifact="images"/>
+    <transformation query="copy" writer="FileIo" source="templates/old-ocean/css" artifact="css"/>
+    <transformation query="copy" writer="FileIo" source="templates/old-ocean/images" artifact="images"/>
     <transformation query="" writer="Search" source="" artifact="."/>
-    <transformation query="" writer="xsl" source="templates/old_ocean/preprocess/object-index.xsl" artifact="$object-index" />
-    <transformation query="" writer="xsl" source="templates/old_ocean/index.xsl" artifact="index.html">
+    <transformation query="" writer="xsl" source="templates/old-ocean/preprocess/object-index.xsl" artifact="$object-index" />
+    <transformation query="" writer="xsl" source="templates/old-ocean/index.xsl" artifact="index.html">
       <parameters>
         <variables><title>Class Diagram</title></variables>
         <search>xmljs</search>
       </parameters>
     </transformation>
-    <transformation query="" writer="xsl" source="templates/old_ocean/classgraph.xsl" artifact="graph.html">
+    <transformation query="" writer="xsl" source="templates/old-ocean/classgraph.xsl" artifact="graph.html">
       <parameters><variables><title>phpDocumentor</title></variables>
         <search>xmljs</search>
       </parameters>
     </transformation>
-    <transformation query="/project/file/@path" writer="xsl" source="templates/old_ocean/file.xsl" artifact="{$path}">
+    <transformation query="/project/file/@path" writer="xsl" source="templates/old-ocean/file.xsl" artifact="{$path}">
       <parameters><variables><title>File</title></variables>
         <search>xmljs</search>
       </parameters>
     </transformation>
-    <transformation query="" writer="xsl" source="templates/old_ocean/markers.xsl" artifact="markers.html">
+    <transformation query="" writer="xsl" source="templates/old-ocean/markers.xsl" artifact="markers.html">
       <parameters><variables><title>Markers</title></variables>
         <search>xmljs</search>
       </parameters>
     </transformation>
-    <transformation query="" writer="xsl" source="templates/old_ocean/parse_markers.xsl" artifact="parse_markers.html">
+    <transformation query="" writer="xsl" source="templates/old-ocean/parse_markers.xsl" artifact="parse_markers.html">
       <parameters><variables><title>Errors</title></variables>
         <search>xmljs</search>
       </parameters>
