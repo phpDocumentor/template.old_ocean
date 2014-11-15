@@ -126,6 +126,12 @@
     <div class="method">
       <a id="{../name}::{name}()" />
       <h3>
+        <span class="nb-faded-text">
+          <xsl:value-of select="@visibility" />&#160;
+          <xsl:if test="@static='true'">static&#160;</xsl:if>
+          <xsl:if test="@final='true'">final&#160;</xsl:if>
+          <xsl:if test="@abstract='true'">abstract&#160;</xsl:if>
+        </span>
         <xsl:value-of select="name" />
         <span class="nb-faded-text">(
           <xsl:for-each select="argument">
